@@ -1,0 +1,77 @@
+.header {
+    background-color: black;
+    width: 100vw;
+    color: white;
+    padding: 13px;
+    display: flex;
+    position: sticky;
+    top: 0;
+
+
+    .nav {
+
+        &__list {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 1.1rem;
+            padding: 4px;
+            background-color: grey;
+            width: 97vw;
+            border-radius: 10px;
+            gap: 30px
+        }
+
+}
+}
+
+.portada {
+    width: 100vw;
+    background-image: url(../img/portada2.jpg);
+
+}
+
+
+.caja {
+    width: 500px;
+    border: solid;
+    background-image: linear-gradient(black, gray, beige);
+    background-size: 500px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 1%;
+    padding: 15px;
+    color: black;
+    object-fit: fill;
+}
+
+.contenedor-galeria img {
+    width: 100%;
+    height: 700px;
+    object-fit: fill;
+}
+
+
+.article__resumen {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 100vw;
+}
+
+
+.contenedor-galeria {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+
+    &imagen {
+        width: 100%;
+        height: 700px;
+        object-fit: fill;
+    }
+}

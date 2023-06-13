@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-family: 'Crimson Text', serif;
+}
+
+h2 {
+    font-family: 'Crimson Text', serif;
+}
+
+h3 {
+    font-family: 'Crimson Text', serif;
+}
+
+p {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.nav {
+    &__list-item {
+        background-color: grey;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        width: 250px;
+        border-radius: 3PX;
+    }
+
+    &__list-item:hover {
+        background-color: rgb(223, 211, 211);
+        color: black;
+        font-size:20px ;
+        transition-duration:1.5s;
+    }
+
+    &__buscador {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin: 16px;
+    }
+}
+
+.header__cont-titulo {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.titulo {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 7px;
+    font-size: 1.2rem;
+}
+
+
+.footer {
+    // background-color: black;
+    // color: white;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    &__consultas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__atajo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
