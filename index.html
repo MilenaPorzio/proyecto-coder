@@ -24,12 +24,12 @@
     <nav class="header">
 
         <header>
-            <div class="titulo-buscador">
-                <div class="header-cont-titulo">
+            <div class="header__buscador">
+                <div class="header__cont-titulo">
                     <h1 class="header__titulo">Demon Slayer: kimetsi no yaiba</h1>
                 </div>
 
-                <div class="buscador__nav">
+                <div class="nav__buscador">
                     <form action="">
                         <label for="busqueda">Realizar busqueda</label>
                         <input type="search" id="busqueda" placeholder="Buscar...">
@@ -39,45 +39,53 @@
             </div>
 
             <div class="nav">
-                <ul class="nav-list">
-                    <li class="lista-nav-item"><a href="#historia">Resumen</a></li>
-                    <li class="lista-nav-item"><a href="./pages/personaje.html">Personajes</a></li>
-                    <li class="lista-nav-item"><a href="./pages/anime.html">Anime</a></li>
-                    <li class="lista-nav-item"><a href="./pages/peliculas.htm">Películas</a></li>
-                    <li class="lista-nav-item"><a href="./pages/tienda.html">Tienda</a></li>
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a href="#historia">Resumen</a></li>
+                    <li class="nav__list-item"><a href="./pages/personaje.html">Personajes</a></li>
+                    <li class="nav__list-item"><a href="./pages/anime.html">Anime</a></li>
+                    <li class="nav__list-item"><a href="./pages/peliculas.htm">Películas</a></li>
+                    <li class="nav__list-item"><a href="./pages/tienda.html">Tienda</a></li>
                     <i class="bi bi-cart3"></i>
                 </ul>
         </header>
-
-
-
     </nav>
 
     <main class="portada">
 
         <section class="titulo">
             <h2 id="historia">Historia de Demon Slayer</h2>
+            </section">
 
-        </section class="orden-cajas">
-        <div class="contenedor-galeria">
-            <article class="caja">
-                <img src="./img/resumen1.jpg" alt="Tanjiro, Inosuke y Zenitsu atacando">
-                <h3>Resumen</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At eligendi sunt velit fugiat vel
-                    molestiae
-                    aliquam voluptate voluptatibus, optio saepe porro exercitationem eum tempore labore tempora.
-                    Impedit
-                    saepe itaque doloremque?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero magni
-                    facilis
-                    doloremque voluptatum ducimus odio atque soluta perferendis quae reprehenderit laboriosam
-                    repudiandae facere laborum unde sequi, labore porro ad totam. Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Sed nam praesentium reprehenderit quas, quia aperiam fuga, nulla qui amet
-                    dolorum,
-                    iusto omnis est mollitia alias. Quos dicta rerum quaerat reprehenderit?
-                </p>
-            </article>
-        </div>
+            <div class="contenedor-galeria">
+                <article class="caja">
+                    <img src="./img/resumen1.jpg" alt="Tanjiro, Inosuke y Zenitsu atacando">
+                    <h3>Resumen</h3>
+                    <p>Ambientada en la era Taisho, la historia se centra en un joven llamado Tanjiro Kamado; un joven
+                        inteligente y de buen corazón que vive con su familia en las montañas, el cual se ha convertido
+                        en la única fuente de ingresos de su familia tras el fallecimiento de su padre, haciendo viajes
+                        al pueblo cercano para vender carbón. Sin embargo, toda su vida cotidiana cambia radicalmente
+                        cuando en uno de estos viajes, regresa a casa y descubre que toda su familia había sido
+                        asesinada por un poderoso demonio llamado Muzan Kibutsuji, siendo únicamente su hermana menor
+                        llamada Nezuko Kamado la única sobreviviente de aquel incidente, pero mientras trata de llevar a
+                        Nezuko al pueblo cercano para pedir ayuda, inesperadamente su hermana se despierta en pleno
+                        trayecto y se transforma en una demonio y trata de atacar a Tanjiro, pero a pesar de su
+                        condición Nezuko aun guarda signos de emociones y pensamiento humanos y trata en todo lo posible
+                        por no matar a su hermano. Sin embargo, su encuentro es rápidamente interrumpido por un joven
+                        llamado Giyū Tomioka, un poderoso espadachín integrante de la elite de los Hashira,
+                        cronológicamente siendo el actual Hashira del agua, el cual pertenece a una organización secreta
+                        de asesinos de demonios conocidos como 'Demon Slayers', el cual en un principio intenta matar a
+                        Nezuko por su condición de demonio, pero después de ver la determinación de Tanjirō por
+                        protegerla y de que su hermana Nezuko aun siendo una demonio intente protegerlo también, Tomioka
+                        decide perdonarle la vida por esta vez a Nezuko, no sin antes colocarle un bozal de bambú en la
+                        boca como precaución por sus colmillos. Posteriormente Tomioka recluta a Tanjiro y lo envía con
+                        su antiguo maestro Sakonji Urokodaki, un antiguo miembro del Cuerpo de Demon Slayers, para que
+                        éste le enseñe a convertirse también en un asesino de demonios y comienza su búsqueda para
+                        ayudar a su hermana a convertirse nuevamente en humana y vengar la muerte del resto de su
+                        familia que fue asesinada. En su aventura conoce a los 'Pilares', quienes son los miembros más
+                        fuertes de la organización, en donde Tanjiro emprenderá una aventura acompañada de amigos.
+                    </p>
+                </article>
+            </div>
 
 
 
@@ -86,7 +94,7 @@
     <footer class="footer">
 
         <form>
-            <div class="">
+            <div class="footer__consultas">
 
                 <div>
                     <label for="nombre-apellido">Nombre y Apellido</label>
@@ -111,11 +119,21 @@
             </div>
         </form>
 
-        <div class="iconos">
+        <div class="footer__iconos">
             <ul>
-                <li class="lista-redes-icons">Instagram <i class="bi bi-instagram"></i></li>
-                <li class="lista-redes-icons">Facebook <i class="bi bi-facebook"></i></li>
-                <li class="lista-redes-icons">Twitter <i class="bi bi-twitter"></i></li>
+                <li class="footer__iconos-redes">Instagram <i class="bi bi-instagram"></i></li>
+                <li class="footer__iconos-redes">Facebook <i class="bi bi-facebook"></i></li>
+                <li class="footer__iconos-redes">Twitter <i class="bi bi-twitter"></i></li>
+            </ul>
+        </div>
+
+        <div class="footer__atajo">
+            <ul>
+                <li class="footer__atajo-nav"><a href="./index.html">Resumen</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/personaje.html">Personajes</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/anime.html">Anime</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/peliculas.htm">Películas</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/tienda.html">Tienda</a></li>
             </ul>
         </div>
 
