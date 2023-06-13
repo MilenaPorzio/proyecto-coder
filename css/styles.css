@@ -35,6 +35,7 @@
   border-radius: 1%;
   padding: 15px;
   color: black;
+  object-fit: fill;
 }
 
 .contenedor-galeria img {
@@ -119,6 +120,13 @@ p {
   margin: 16px;
 }
 
+.header__cont-titulo {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-size: 30px;
+}
+
 .titulo {
   display: flex;
   width: 100vw;
@@ -129,15 +137,6 @@ p {
   padding: 7px;
   font-size: 1.2rem;
 }
-
-.header__cont-titulo {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  font-size: 30px;
-}
-
-
 
 .footer {
   width: 100vw;

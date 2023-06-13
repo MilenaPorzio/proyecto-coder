@@ -66,6 +66,7 @@ p {
 
 .titulo {
     display: flex;
+    flex-direction: column;
     width: 100vw;
     justify-content: center;
     align-items: center;
