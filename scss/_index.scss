@@ -1,3 +1,4 @@
+
 .header {
     background-color: black;
     width: 100vw;
@@ -6,23 +7,6 @@
     display: flex;
     position: sticky;
     top: 0;
-
-
-    .nav {
-
-        &__list {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            font-size: 1.1rem;
-            padding: 4px;
-            background-color: grey;
-            width: 97vw;
-            border-radius: 10px;
-            gap: 30px
-        }
-
-}
 }
 
 .portada {
