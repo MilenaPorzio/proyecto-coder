@@ -87,6 +87,9 @@ p {
   font-family: "Nanum Myeongjo", serif;
 }
 
+.nav {
+  width: 100vw;
+}
 .nav__list {
   display: flex;
   justify-content: center;
@@ -253,20 +256,20 @@ p {
     padding: 20px;
     flex-direction: row;
   }
-  .footer .footer__consultas {
+  .footer__consultas {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .footer .footer__atajo {
+  .footer__atajo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
   }
-  .footer .footer__atajo .footer__atajo-nav {
+  .footer__atajo-nav {
     display: flex;
     flex-direction: column;
     justify-content: center;

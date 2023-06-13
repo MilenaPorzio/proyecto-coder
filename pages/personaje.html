@@ -35,7 +35,7 @@
 
 
             <div class="nav">
-                <ul class="nav-list">
+                <ul class="nav__list">
                     <li class="nav__list-item"><a href="../index.html">Resumen</a></li>
                     <li class="nav__list-item"><a href="#personajes">Personajes</a></li>
                     <li class="nav__list-item"><a href="./anime.html">Anime</a></li>
@@ -43,7 +43,7 @@
                     <li class="nav__list-item"><a href="../pages/tienda.html">Tienda</a></li>
                     <i class="bi bi-cart3"></i>
                 </ul>
-            </header>
+        </header>
     </nav>
 
     <main class="portada">
@@ -106,32 +106,31 @@
 
         <form>
 
-            <hr>
+            <div class="footer__consultas">
+                <div>
+                    <label for="nombre-apellido">Nombre y Apellido</label>
+                    <input type="text" id="nombre-apellido">
+                </div>
 
-            <div>
-                <label for="nombre-apellido">Nombre y Apellido</label>
-                <input type="text" id="nombre-apellido">
+                <div>
+                    <label for="correo-electronico">Correo electrónico </label>
+                    <input type="email" id="correo-electronico">
+                </div>
+
+                <div>
+                    <label for="consultas">Consultas</label>
+                    <textarea name="" id="consultas" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit">
+
+                    <input type="reset" value="Borrar formulario">
+                </div>
             </div>
-
-            <div>
-                <label for="correo-electronico">Correo electrónico </label>
-                <input type="email" id="correo-electronico">
-            </div>
-
-            <div>
-                <label for="consultas">Consultas</label>
-                <textarea name="" id="consultas" cols="30" rows="10"></textarea>
-            </div>
-
-            <div>
-                <input type="submit">
-
-                <input type="reset" value="Borrar formulario">
-            </div>
-
         </form>
 
-        <div class="iconos">
+        <div class="footer__iconos">
             <ul>
                 <li>Instagram <i class="bi bi-instagram"></i></li>
                 <li>Facebook <i class="bi bi-facebook"></i></li>
@@ -139,6 +138,15 @@
             </ul>
         </div>
 
+        <div class="footer__atajo">
+            <ul class="footer__atajo-nav">
+                <li class="footer__atajo-nav"><a href="./index.html">Resumen</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/personaje.html">Personajes</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/anime.html">Anime</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/peliculas.htm">Películas</a></li>
+                <li class="footer__atajo-nav"><a href="./pages/tienda.html">Tienda</a></li>
+            </ul>
+        </div>
     </footer>
 
 
