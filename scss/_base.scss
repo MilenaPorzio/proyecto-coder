@@ -1,3 +1,7 @@
+$color-negro: black;
+$color-gris:grey;
+$color-blanco: white;
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +16,7 @@ ol {
 
 a {
     text-decoration: none;
-    color: black;
+    color:$color-negro;
 }
 
 h1 {
@@ -31,47 +35,6 @@ p {
     font-family: 'Nanum Myeongjo', serif;
 }
 
-.nav {
-    width: 100vw;
-
-    &__list {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 1.1rem;
-        padding: 4px;
-        background-color: grey;
-        width: 97vw;
-        border-radius: 10px;
-        gap: 30px
-    }
-
-
-    &__list-item {
-        background-color: grey;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        width: 250px;
-        border-radius: 3PX;
-    }
-
-    &__list-item:hover {
-        background-color: rgb(223, 211, 211);
-        color: black;
-        font-size: 20px;
-        transition-duration: 1.5s;
-    }
-
-    &__buscador {
-        display: flex;
-        justify-content: end;
-        align-items: end;
-        margin: 16px;
-    }
-}
-
 .header__cont-titulo {
     display: flex;
     width: 100vw;
@@ -85,45 +48,18 @@ p {
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background-color: black;
-    color: white;
+    background-color:$color-negro;
+    color: $color-blanco;
     padding: 7px;
     font-size: 1.2rem;
 }
 
-
-.footer {
-    background-color: black;
-    color: white;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-
-    &__consultas {
+@media(min-width: 300px) and (max-width: 800px) {
+    .header__cont-titulo {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
-
-    }
-
-    &__atajo {
-        display: flex;
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
-        color: white;
-
-        &-nav {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            padding: 10px;
-            padding-left: 20px;
-        }
+        width: 100vw;
+        font-size: 20px;
     }
 }

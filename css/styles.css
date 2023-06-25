@@ -24,13 +24,15 @@
   border-radius: 1%;
   padding: 15px;
   color: black;
-  object-fit: fill;
+}
+
+.caja img {
+  height: 600px;
 }
 
 .contenedor-galeria img {
-  width: 100%;
-  height: 700px;
   object-fit: fill;
+  width: 100%;
 }
 
 .article__resumen {
@@ -48,12 +50,35 @@
   gap: 10px;
   padding: 15px;
 }
-.contenedor-galeriaimagen {
-  width: 100%;
-  height: 700px;
-  object-fit: fill;
-}
 
+@media (min-width: 300px) and (max-width: 800px) {
+  .header {
+    width: 100vw;
+    display: grid;
+    flex-flow: column;
+    grid-template-columns: repeat(2, 2, 2fr);
+  }
+  .header__titulo {
+    text-align: center;
+  }
+  .portada {
+    width: 100vw;
+    background-image: url(../img/fondo.jpg);
+  }
+  .caja {
+    width: 350px;
+  }
+  .contenedor-galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .article__anime {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -87,6 +112,88 @@ p {
   font-family: "Nanum Myeongjo", serif;
 }
 
+.header__cont-titulo {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 7px;
+  font-size: 1.2rem;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .header__cont-titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    font-size: 20px;
+  }
+}
+.footer__iconos-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+.footer__consultas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__atajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.footer__atajo-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
+}
+.footer__atajo-nav a {
+  color: white;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .footer {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer__iconos {
+    padding: 50px;
+  }
+  .footer__atajo-nav {
+    display: none;
+  }
+}
 .nav {
   width: 100vw;
 }
@@ -108,7 +215,7 @@ p {
   align-items: center;
   display: flex;
   width: 250px;
-  border-radius: 3PX;
+  border-radius: 3px;
 }
 .nav__list-item:hover {
   background-color: rgb(223, 211, 211);
@@ -123,71 +230,7 @@ p {
   margin: 16px;
 }
 
-.header__cont-titulo {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  font-size: 30px;
-}
-
-.titulo {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
-  background-color: black;
-  color: white;
-  padding: 7px;
-  font-size: 1.2rem;
-}
-
-.footer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-.footer__consultas {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.footer__atajo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.footer__atajo-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 10px;
-  padding-left: 20px;
-}
-
-.footer__iconos-redes {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100px;
-}
-
 @media (min-width: 300px) and (max-width: 800px) {
-  .header {
-    width: 100vw;
-    display: grid;
-    flex-flow: column;
-    grid-template-columns: repeat(2, 2, 2fr);
-  }
   .nav {
     grid-column: span 2;
   }
@@ -196,88 +239,42 @@ p {
     justify-content: center;
     gap: 30px;
   }
-  .header__cont-titulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    font-size: 20px;
-  }
   .nav__buscador {
     grid-column: span 2;
     width: 100vw;
     justify-content: center;
     align-items: center;
   }
-  .header__titulo {
-    text-align: center;
-  }
-  .item {
-    font: size 2rem;
-  }
-  .portada {
-    width: 100vw;
-    background-image: url(../img/fondo.jpg);
-  }
-  .caja {
-    width: 80vw;
-    border: solid;
-    background-image: linear-gradient(black, gray, beige);
-    background-size: 500px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    border-radius: 1%;
-    padding: 15px;
-    object-fit: fill;
-  }
-  .article__anime {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-  }
-  .contenedor-galeria img {
-    width: 100%;
-    height: 700px;
-    object-fit: fill;
-  }
-  .contenedor-galeria {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
-  }
-  .footer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    flex-direction: row;
-  }
-  .footer__consultas {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer__atajo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-  }
-  .footer__atajo-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    padding: 10px;
-    padding-left: 20px;
-  }
+}
+.precio {
+  width: 500px;
+  border: solid;
+  display: flex;
+  background-image: linear-gradient(black, gray, beige);
+  background-size: 500px;
+  flex-flow: column;
+  align-items: center;
+  border-radius: 1%;
+  padding: 15px;
+  color: black;
+  line-height: 1.5;
+}
+
+.precio img {
+  height: 500px;
+}
+
+.boton {
+  background-color: grey;
+  color: white;
+  margin: 13px;
+  padding: 10px 20px;
+  border: solid;
+}
+.boton:hover {
+  background-color: green;
+  font-size: 25px;
+  transition-duration: 1.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */

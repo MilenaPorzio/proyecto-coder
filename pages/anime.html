@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Descripción de las temporadas de Demon Slayer: Kimetsu no Yaiba</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    <meta name="description"
+        content="Damos una descripción de todas las temporadas del anime Demon Slayer: Kimetsu no Yaiba">
 </head>
 
 <body>
@@ -42,7 +44,7 @@
                     <li class="nav__list-item"><a href="../pages/tienda.html">Tienda</a></li>
                     <i class="bi bi-cart3"></i>
                 </ul>
-            </header>
+        </header>
     </nav>
     <main class="portada">
 
@@ -70,7 +72,7 @@
 
 
 
-            <article  class="contenedor-galeria">
+            <article class="contenedor-galeria">
                 <div class="caja">
                     <img src="../img/pages2/temporada2.jpg" alt="temporada-dos">
                     <h3>Demon Slayer: Arco del distrito rojo</h3>
@@ -107,46 +109,55 @@
 
         </section>
     </main>
-
+    <hr>
     <footer class="footer">
 
         <form>
 
-            <hr>
-
             <div class="footer__consultas">
-                <label for="nombre-apellido">Nombre y Apellido</label>
-                <input type="text" id="nombre-apellido">
+
+                <div>
+                    <label for="nombre-apellido">Nombre y Apellido</label>
+                    <input type="text" id="nombre-apellido" placeholder="Nombre y Apellido">
+                </div>
+
+                <div>
+                    <label for="correo-electronico">Correo electrónico </label>
+                    <input type="email" id="correo-electronico" placeholder="ejemplo@gmail.com">
+                </div>
+
+                <div>
+                    <label for="consultas">Consultas</label>
+                    <textarea name="" id="consultas" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="submit">
+
+                    <input type="reset" value="Borrar formulario">
+                </div>
             </div>
-
-            <div>
-                <label for="correo-electronico">Correo electrónico </label>
-                <input type="email" id="correo-electronico">
-            </div>
-
-            <div>
-                <label for="consultas">Consultas</label>
-                <textarea name="" id="consultas" cols="30" rows="10"></textarea>
-            </div>
-
-            <div>
-                <input type="submit">
-
-                <input type="reset" value="Borrar formulario">
-            </div>
-
         </form>
 
-        <div>
+        <div class="footer__iconos">
             <ul>
-                <li>Instagram <i class="bi bi-instagram"></i></li>
-                <li>Facebook <i class="bi bi-facebook"></i></li>
-                <li>Twitter <i class="bi bi-twitter"></i></li>
+                <li class="footer__iconos-redes">Instagram <i class="bi bi-instagram"></i></li>
+                <li class="footer__iconos-redes">Facebook <i class="bi bi-facebook"></i></li>
+                <li class="footer__iconos-redes">Twitter <i class="bi bi-twitter"></i></li>
+            </ul>
+        </div>
+
+        <div class="footer__atajo">
+            <ul class="footer__atajo-nav">
+                <li class="footer__atajo-nav"><a href="../index.html">Resumen</a></li>
+                <li class="footer__atajo-nav"><a href="./personaje.html">Personajes</a></li>
+                <li class="footer__atajo-nav"><a href="#anime">Anime</a></li>
+                <li class="footer__atajo-nav"><a href="./peliculas.htm">Películas</a></li>
+                <li class="footer__atajo-nav"><a href="../pages/tienda.html">Tienda</a></li>
             </ul>
         </div>
 
     </footer>
-
 
 </body>
 
