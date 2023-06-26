@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $color-negro;
+    color: $color-blanco;
+
+    &__consultas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__atajo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: $color-blanco;
+
+        &-nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            padding-left: 20px;
+
+            a {
+                color: $color-blanco;
+            }
+        }
+    }
+}
+
+@media(min-width: 300px) and (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        padding: 30px;
+
+        &__iconos {
+            padding: 50px;
+        }
+
+        &__atajo-nav {
+            display: none;
+        }
+    }
+
+}

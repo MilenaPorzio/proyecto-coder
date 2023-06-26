@@ -1,0 +1,36 @@
+
+.precio {
+    width: 500px;
+    border: solid;
+    display: flex;
+    background-image: linear-gradient(black, gray, beige);
+    background-size: 500px;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 1%;
+    padding: 15px;
+    color: $color-negro;
+    line-height: 1.5
+}
+
+.precio img{
+height: 500px;
+}
+
+.boton{
+    background-color: $color-gris;
+    color: $color-blanco;
+    margin: 13px;
+    padding: 10px 20px;
+    border: solid;
+
+    &:hover{
+        background-color: green;
+        font-size: 25px;
+        transition-duration: 1.5s;
+    }
+}
+
+@media(min-width: 300px) and (max-width: 800px) {
+
+}
